@@ -5,7 +5,7 @@
             <form action="{{ route('blog.update', $blog) }}" method="POST" class="mt-4">
                 @csrf
                 @method('put')
-                <div class="mb-4">
+                <div class="mb-3">
                     <label for="titulo" class="block text-gray-700 font-medium">Título:</label>
                     <input type="text" id="titulo" name="titulo" value="{{ $blog->title }}" required
                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
