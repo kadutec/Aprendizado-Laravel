@@ -14,19 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        Blog::create([
-            'title' => 'titulo espec'
-        ]);
-
-        Blog::create([
-            'title' => 'titulo ai ze da manga'
-        ]);
-
-        Blog::create([
-            'title' => 'titulo teste'
-        ]);
-
+        User::factory(10)->create();
     }
 }
